@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
   emoticon.each do |symbols|
-    binding.pry
+    library["get_emoticon"][symbols]
   end
   
 end
