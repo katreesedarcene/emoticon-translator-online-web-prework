@@ -17,25 +17,24 @@ YAML.load_file(file_path).each do |english_name, japanese_emoticon|
 library  # code goes here
 end
 
-# def get_japanese_emoticon(file_path, emoticon)
-#   load_library(file_path)
-#   grin_emoticon = library["get_emoticon"][emoticon]
-  
-#     if grin_emoticon
-#     grin_emoticon
-#   else
-#     "Sorry, that emoticon was not found"
-#   end
-# end
 def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
-  result = library["get_emoticon"][emoticon]
-  if result
-    result
+  grin_emoticon = library["get_emoticon"][emoticon]
+    if grin_emoticon
+    grin_emoticon
   else
     "Sorry, that emoticon was not found"
   end
 end
+# def get_japanese_emoticon(file_path, emoticon)
+#   library = load_library(file_path)
+#   result = library["get_emoticon"][emoticon]
+#   if result
+#     result
+#   else
+#     "Sorry, that emoticon was not found"
+#   end
+# end
 
 
 def get_english_meaning
